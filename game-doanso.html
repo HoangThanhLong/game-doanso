@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HI</title>
+</head>
+<body>
+<script>
+    let num =[];
+    for (let i = 0; i < 101; i++){
+        num.push(i);
+    }
+    let secretNumber = num[69];
+    let number = parseInt(prompt('Mời bạn đoán số bí mật'));
+    do {
+        if (number === secretNumber){
+            alert("Bingo!!! Bạn đã đoán đúng số bí mật. ");
+            break;
+        } else if (number < secretNumber){
+            alert("Too low. ");
+            let number1 = parseInt(prompt("Số bí mật lớn hơn số bạn đoán. Hãy đoán lại: "));
+            number = number1;
+        }else if (number > secretNumber){
+            alert("Too hight. ");
+            let number2 = parseInt(prompt("Số bí mật nhỏ hơn số bạn đoán. Hãy đoán lại: "));
+            number = number2;
+        }
+    } while (0 < 1);
+</script>
+</body>
+</html>
